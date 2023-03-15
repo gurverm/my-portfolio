@@ -1,67 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gurveer Madurai | Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    <header class="header">
-        <div class="header-container">
-                <h1>
-                    Gurveer Madurai
-                </h1>
-                <figure class="myself">
-                    <img src="./assets/images/circlegurv.png" alt="Picture of developer in front of a river" class="myself">
-                </figure>
-             <nav>
-                <ul>
-                    <li>
-                         <a href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                         <a href="#work">Work</a>
-                    </li>
-                    <li>
-                         <a href="#contact-me">Contact Me</a>
-                    </li>
-                    <li>
-                         <a href="#resume">Resume</a>
-                     </li>
-                </ul>
-            </nav>
-        </div>
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <header>
+      <div class="developer-info">
+        <img src="./assets/images/circlegurv.png" alt="Developer Avatar" />
+        <h1>Gurveer Madurai</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-
-<main class="portfolio">
-    <Section class="about-me" id="about-me">
-        <h2>About Me</h2>
-        <p>I am a junior web developer located in British Columbia. A few years ago I graduated from The university of Broitish Columbia with my Bachelors of Sciences with a major in Biochemistry. Afterwards I spent a few years working in healthcare while i applied for medical school. As time went on I relaized no longer wanted to work in healthcare anymore and wanted to change careers into software. I am excited for my journey! Living in BC is amazing as I get to intake beautiful scenes of nature daily. I love going on hikes with my australian shephard named Echo, snowboarding, and drinking coffee</p>
-    </div>
-    <section class="work" id="work">
+    <main>
+      <section id="about" class="about">
+        <h2>About</h2>
+        <p>I am a junior web developer located in British Columbia. A few years ago I graduated from The university of British Columbia with my Bachelors of Sciences with a major in Biochemistry. Afterwards I spent a few years working in healthcare while i applied for medical school. As time went on I relaized no longer wanted to work in healthcare anymore and wanted to change careers into software. I am excited for my journey! Living in BC is amazing as I get to intake beautiful scenes of nature daily. I love going on hikes with my australian shephard named Echo, snowboarding, and drinking coffee</p>
+      </section>
+      <section id="work" class="work">
         <h2>Work</h2>
-            <div class="battleship">Battleship
-            </div>
-            <div class="prework">Hangman</div>
-            <div class="prework">Calculator</div>
-            <div class="prework">Pac-man</div>
-    </section>
-    <section class="contact-me" id="contact-me">
-        <h2>Contact Me</h2>
-        <ul class="contactList">
-            <li>778-363-6885</li>
-            <li>maduraigurveer@gmail.com</li>
-        </ul>
-<div class=""></div>    </section>
-
-
-
-</main>
-
-
-
-
-</body>
+        <div class="application">
+          <a href="https://gurverm.github.io/challenge-01/"><img src="./assets/images/Horiseon.png" alt="Project 1" /></a>
+          <h3>Horiseon</h3>
+          <p>CSS, HTML</p>
+        </div>
+        <div class="application">
+          <a href="https://www.istockphoto.com/vector/single-of-silhouettes-of-warships-for-design-and-gm1332740771-415502449"><img src="./assets/images/battleshipstock.jpg" alt="A black battleship" /></a>
+          <h3>Battleship</h3>
+        </div>
+        <div class="application">
+          <a href="https://stock.adobe.com/search?k=hangman&asset_id=248961156"><img src="./assets/images/hangman.jpeg" alt="Stickman hanging" /></a>
+          <h3>Hangman</h3>
+        </div>
+        <div class="application">
+          <a href="https://www.dreamstime.com/editorial-image-pac-man-his-enemies-game-theme-vector-illustration-retro-computer-game-pinky-blinky-inky-clyde-characters-image59836450"><img src="./assets/images/pacman.jpeg" alt="Pacman chasing four ghosts" /></a>
+          <h3>Pacman</h3>
+        </div>
+        <div class="application">
+          <a href="https://en.wikipedia.org/wiki/Super_Mario"><img src="./assets/images/mario.png" alt="Super Mario written in colored block letters" /></a>
+          <h3>Super Mario</h3>
+        </div>
+        <!-- Since I do not have any applications made, I simply linked the source of where the images can be found. I will update this with applications as the course goes on  -->
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Developer contact information goes here</p>
+      </section>
+    </main>
+  </body>
 </html>
