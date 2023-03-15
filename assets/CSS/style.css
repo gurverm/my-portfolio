@@ -4,17 +4,17 @@
     margin: 0;
 }
 
-body {
+.body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 26px;
     line-height: 1.5;
-    background-color: #fff;
+    background-color: #EDEDF6;
 }
 
 .header {
     padding: 70px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(39, 39, 39);
+    background-color: #83939F;
     color: #fff;
 }
 
@@ -45,36 +45,59 @@ body {
     margin-left: 25px;
     color: #b60707;
 }
-
-
-
-.contact-me ul li {
-    display: inline-block;
+.about-me {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+}
+.about-me, h2{
+    margin-right: 30px;
+    position: absolute;
+    border-right: 1px solid black;
+    
+}
+.about-me, p{
+    border-left: 2px #000000;
+    padding-left: 30px;
 }
 
-.about-me {
+.work {
+    float: left;
+}
+.prework {
+    float: right;
     margin: 10px;
     display: block;
     background-color: #d16969;
     padding: 10px;
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap:wrap;
+    align-items: center;
 }
 
-.about-me:hover {
+.prework:hover {
     border-color: #08a008;
     color: #c4c40d;
 }
 
-.work {
-    display: flex;
-    justify-content:flex-start ;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    align-items: center;
-}
-
-.prework {
-    width: 200px;
+.prework,.battleship {
+    width: 400px;
+    height: 200px;
     margin: 10px;
-    border: 3px solid #333;
+    border: 5px solid #138c9c;
     background-color: #fff;
 }
+
+.contact-me ul li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    text-decoration: underline;
+}
+
