@@ -15,9 +15,9 @@ When inspecting the code it can be found that the webpage did not behave as inte
 The webpage does have have responsive commands through the UI in both the navigation bar as well as the images.
 
 
-![My-Portfolio Deployed](/assets/images/Capture.PNG)
+![My-Portfolio Deployed](/assets/images/deployed.PNG)
 
-
+link to deployed application: https://gurverm.github.io/my-portfolio/ 
 ## Credits
 
 https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-different-height-and-width-the-same-via-css

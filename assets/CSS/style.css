@@ -59,8 +59,6 @@ nav ul li a {
   overflow: hidden;
 }
 
-
-
 .container,.containerTwo,.containerThree {
   margin: 0 auto;
   display: flex;
@@ -97,10 +95,10 @@ p, .containerImage img, .container ul  {
   font-size: 18px;
 }
 
-.containerImage img{
+.containerImage img {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   width: 400px;
   height: 200px;
   margin-bottom: 10px;
@@ -108,7 +106,7 @@ p, .containerImage img, .container ul  {
   border: thick solid var(--mainBlue);
   }
 
-  .containerImage:first-child img {
+  .applicationOne:first-child img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -119,7 +117,7 @@ p, .containerImage img, .container ul  {
     border: thick solid var(--mainBlue);
   }
 
-/* I attempted various changes to the flexbox properies of my code. However, I could not get the images to align in two columns. I also could not select the first child image and enlarge it in comparison to the others */
+/* I attempted various changes to the flexbox properies of my code. However, I could not get the images to align in two columns.*/
 
   .container img,.containerTwo img ,.containerThree img:hover {
     opacity: 0.9;
