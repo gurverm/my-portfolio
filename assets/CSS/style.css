@@ -9,7 +9,8 @@ body{
 }
 :root {
   --mainFontColor:#333;
-  --mainBlue:#06a5b1
+  --mainBlue:#06a5b1;
+  --mainTan:#fce2ce; 
 }
 
 header {
@@ -90,9 +91,12 @@ p, .containerImage img, .container ul  {
 
 .containerTitle{
   position: absolute;
-  top: 8px;
+  top: 30px;
   left: 16px;
   font-size: 18px;
+  font-weight: bold;
+  color: var(--mainTan);
+  text-decoration: underline;
 }
 
 .containerImage img {
