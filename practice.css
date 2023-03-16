@@ -1,108 +1,170 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: #fce2ce;
+}
+:root {
+  --mainFontColor:#333;
+  --mainBlue:#06a5b1
+}
+
+header {
+  background-color: var(--mainBlue);
+  padding: 60px;
+}
+
+.headerBox {
+  background-color: var(--mainFontColor);
+  color: var(--mainBlue);
+  position: absolute;
+  left: 0px;
+}
+header img {
+  max-width: 10%;
+  height: auto;
+  border-radius: 20%;
+  position: absolute;
+  left: 10px;
+  top: 110px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  float: right;
+}
+
+nav ul li {
+  margin: 0 10px;
+  text-decoration: underline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--mainFontColor);
+  font-weight: bold;
+}
+
+.headerImage {
+  width: auto;
+
+}
+.headerImage img{
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+.container,.containerTwo,.containerThree {
+  margin: 0 auto;
+  display: flex;
+  flex: 1 0 0;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+}
+
+h1 {
+  margin-right: 20px;
+  color: var(--mainBlue)
+}
+
+p, .containerImage img, .container ul  {
+  border-left: 2px solid var(--mainBlue);
+  padding-left: 2rem;
+  margin: 16px 0px;
+  color: var(--mainFontColor);
+  font-weight: bold;
+}
+
+.containerImage{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.containerTitle{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+.containerImage img{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 400px;
+  height: 200px;
+  margin-bottom: 10px;
+  padding: 1px;
+  border: thick solid var(--mainBlue);
   }
-  
-  body {
-    font-family: Arial;
-    margin: 0;
+
+  .containerImage:first-child img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 520px;
+    height: 500px;
+    margin-bottom: 10px;
+    padding: 1px;
+    border: thick solid var(--mainBlue);
   }
-  
-  header {
-    padding: 40px;
-    text-align: left;
-    background: #83939F;
-    color: #fff;
+
+/* I attempted various changes to the flexbox properies of my code. However, I could not get the images to align in two columns. I also could not select the first child image and enlarge it in comparison to the others */
+
+
+
+
+
+
+
+
+
+
+
+
+  .container img,.containerTwo img ,.containerThree img:hover {
+    opacity: 0.9;
   }
-  
-  h2 {
-    color: #445876
+
+
+
+.containerThree ul {
+  list-style: none;
+  float: right;
+  justify-content: center;
+  display: flex;
+}
+
+.containerThree ul li {
+  margin: 0 10px;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  header,nav,main {
+    text-align: center;
+    background: #880b11;
   }
-  /* 
-  What happens when we set the display property to flex?
-  The flex container becomes flexible 
-  */
+}
+
+@media screen and (max-width: 768px) {
   nav {
-    display: flex;
-    background-color: #83939F;
+    background-color: #880b11;
   }
-  
-  nav a {
-    color: #fff;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-  }
-  nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-    color: #b60707;
-  }
-  .about {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    width: 50%;
-    height: 100vh;
-  }
+}
 
-  .about h2 {
-    margin-right: 2rem;
+@media screen and (max-width: 576px) {
+  .container,.containerTwo,.containerThree {
+    flex-direction: column;
   }
-
-  .about p {
-    border-left: 2px solid #445876;
-    padding-left: 150px;
-    
-  }
-  .about {
-    
-  }
-  
- 
-  /* 
-  What does the justify-content property do?
-  It is used to align the flex items; in our case, the product cards 
-  */
-  .products {
-    flex: 4;
-    background-color: #fff;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .containerLarge {
-
-    padding: 10px;
-    flex: 0 0 200px;
-  }
-  
-  .containerLarge img {
-    width: 50%;
-    float: right;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  /* 
-  What does the flex-direction property define?
-  It defines in which direction the container wants to stack the flex items
-  What is it doing here? 
-  We are telling the main body and navbar to stack vertically in a column
-  */
-  @media screen and (max-width: 768px) {
-    main,
-    nav {
-      flex-direction: column;
-    }
-  }
-
-
-  footer {
-    padding: 20px;
-    text-align: center;
-    background: #13293d;
-    color: #fff;
-  }
-  
+}

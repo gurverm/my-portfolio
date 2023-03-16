@@ -1,71 +1,61 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Gurveer Madurai | Portfolio</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="practice.css" />
-  </head>
-  <body>
-
-    <header>
-      <h1>Gurveer Madurai</h1>
-     
-    </header>
-
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gurveer Madurai | Portfolio</title>
+  <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="headerBox">Gurveer Madurai</h1>
+    <img src="./assets/images/circlegurv.png" alt="Developers Avatar">
     <nav>
-        <ul>
-            <li>
-                 <a href="#about">About Me</a>
-            </li>
-            <li>
-                 <a href="#work">Work</a>
-            </li>
-            <li>
-                 <a href="#contact">Contact Me</a>
-            </li>
-            <li>
-                 <a href="#resume">Resume</a>
-             </li>
-        </ul>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
+  <figure class="headerImage">
+    <img src="./assets/images/oceanHeader.jpg" alt="Aquatic animals in the water">
+  </figure>
 
-    <main>
+<section>
+  <div class="container" id="about">
+    <h1>About Me</h1>
+    <p>I am a junior web developer located in British Columbia. A few years ago I graduated from The University of British Columbia with my Bachelors of Sciences with a major in Biochemistry. Afterwards I spent a few years working in healthcare while I applied for medical school. As time went on I relaized no longer wanted to work in healthcare anymore and was ready to change careers into software. I am excited for my journey! Living in BC is amazing as I get to intake beautiful scenes of nature daily. I love going on hikes with my australian shephard, snowboarding, and drinking coffee.</p>
+  </div>
+    <div class="containerTwo" id="work">
+      <h1>Work</h1>
+      <div class="containerImage">
+      <a href="https://gurverm.github.io/challenge-01/"><img src="./assets/images/Horiseon.png" alt="Developer application 1"></a>
+      <div class="containerTitle">Horiseon</div>
+      <a href="https://www.istockphoto.com/vector/single-of-silhouettes-of-warships-for-design-and-gm1332740771-415502449"><img src="./assets/images/battleshipstock.jpg" alt="A black battleship" /></a>
+      <a href="https://stock.adobe.com/search?k=hangman&asset_id=248961156"><img src="./assets/images/hangman.jpeg" alt="Stickman hanging" /></a>
+      <a href="https://www.dreamstime.com/editorial-image-pac-man-his-enemies-game-theme-vector-illustration-retro-computer-game-pinky-blinky-inky-clyde-characters-image59836450"><img src="./assets/images/pacman.jpeg" alt="Pacman chasing four ghosts" /></a>
+      <a href="https://en.wikipedia.org/wiki/Super_Mario"><img src="./assets/images/mario.png" alt="Super Mario written in colored block letters" /></a>
+    </div>
 
-      <div class="container">
-        <div class="about" id="about">
-            <h2>About Me</h2>
-            <p>I am a junior web developer located in British Columbia. A few years ago I graduated from The university of British Columbia with my Bachelors of Sciences with a major in Biochemistry. Afterwards I spent a few years working in healthcare while i applied for medical school. As time went on I relaized no longer wanted to work in healthcare anymore and wanted to change careers into software. I am excited for my journey! Living in BC is amazing as I get to intake beautiful scenes of nature daily. I love going on hikes with my australian shephard named Echo, snowboarding, and drinking coffee</p>
-        </div>
-        <div class="work">
-            <div class="containerLarge">
-            <h2>Horiseon</h2>
-            <img src="./assets/images/Horiseon.png" alt="Project Application" />
-            </div>
+  <!-- Since I do not have any applications made, I simply linked the source of where the images can be found. I will update this with applications as the course goes on  -->
+</section>
 
-            <section class="project">
-            <header>Tablet</header>
-            <img src="./assets/images/tablet.jpg" alt="tablet held in hands" />
-            <p>Price: $150</p>
-            </section>
-            <section class="project">
-            <header>Toilet Paper</header>
-            <img
-                src="./assets/images/toilet-paper.jpg"
-                alt="rolls of toilet paper in a basket"
-            />
-            <p>Price: $30</p>
-            </section>
-            <section class="project">
-            <header>Wooden Spoons</header>
-            <img
-                src="./assets/images/wooden-spoons.jpg"
-                alt="4 wooden spoons with different seasonings"
-            />
-            <p>Price: $10</p>
-            </section>
-        </div>
-      </div>
-    </main>
-  </body>
+
+
+
+
+
+
+<div class="containerThree" id="contact">
+  <h1>Contact</h1>
+  <ul>
+    <li><pre>+1 (778) 363-6885</pre></li>
+    <li>maduraigurveer@gmail.com</li>
+    <a href="https://github.com/gurverm"><li>Github</li></a>
+  </ul>
+</div>
+</section>
+</body>
 </html>
