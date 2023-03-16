@@ -17,7 +17,7 @@ body {
   .developer-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
   }
   
   .developer-info img {
@@ -31,6 +31,7 @@ body {
     justify-content: center;
     list-style: none;
     padding: 0;
+    float: right;
   }
   
   nav ul li {
@@ -62,19 +63,20 @@ body {
     margin-right: 2rem;
     color:var(--headingColor) ;
   }
-  .about,.work {
+  .about,.work,.contact {
     margin: 0 auto;
     display: flex;
     align-items: center;
-  width: 100%;
+    width: 100%;
+    flex-wrap: wrap;
   }
   
-  .about h2,.work h3 {
+  .about h2,.work h3,.contact {
     margin-right: 2rem;
     color: var(--headingColor);
   }
   
-  .about p {
+  .about p,.work div,.contact ul {
     border-left: 2px solid  #445876;
     padding-left: 100px;
     
@@ -85,14 +87,12 @@ body {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
-    flex:1 0 0;
-   
+    justify-content: space-around;
+    flex:1 0 0;   
   }
   
-  
-  
   .application img {
+    display: flex;
     width: 400px;
     height: 200px;
     margin-bottom: 10px;
@@ -106,3 +106,25 @@ body {
     height: 1000%;
   }
   
+  .application img:hover {
+    opacity: 0.8;
+  }
+
+  .contact ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    float: right;
+  }
+  
+  .contact ul li {
+    margin: 0 10px;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    header {
+      text-align: center;
+    }
+  }
